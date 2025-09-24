@@ -107,7 +107,9 @@ const mineralData = [
         "description": "A very rare and powerful substance with unknown origins.",
         "sellPrice": "2,000g",
         "location": ["Iridium Node", "Mystic Stone", "Omni Geode", "Shadow Brute", "Shadow Shaman", "Mummy", "Serpent", "Fishing Treasure Chest", "Any monster after reaching the bottom of the mines"],
-        "usedIn": ["Loved by all Villagers except Haley, who hates it.", "Obtain the Galaxy Sword in the Desert.", "Transform children into doves at the Dark Shrine of Selfishness.", "Enchant tools and weapons."],
+        "usedIn": ["Loved by all Villagers except Haley", "Obtain the Galaxy Sword in the Desert", "Transform children into doves at the Dark Shrine of Selfishness", "Enchant tools and weapons"],
         "image": "https://stardewvalleywiki.com/mediawiki/images/5/56/Prismatic_Shard.png"
     },
 ]
+
+export default mineralData
