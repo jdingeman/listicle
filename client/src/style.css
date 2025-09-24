@@ -1,6 +1,6 @@
 /* Root Styles CSS */
 :root {
-    background-color: white;
+    background-color: rgb(231, 217, 241);
     font-family: "Lexend Deca", Helvetica, sans-serif;
     color: black;
 }
@@ -37,20 +37,16 @@
 }
 
 .header-right button {
-  background-color: white;
-  border: solid;
-  border-width: 3px;
-  border-color: rgb(3, 7, 89);
-  border-radius: 0.1rem;
-  border-radius: 16px;
-  box-sizing: border-box;
-  color:  rgb(3, 7, 89);
-  cursor: pointer;
-  padding: 15px 16px;
-  text-align: center;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  width: 80px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(228, 16, 133);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 3px solid black;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
 /* Home page CSS */
@@ -64,7 +60,7 @@ main {
 
 .card {
     width: 300px;
-    height: 525px;
+    height: 325px;
     background: transparent;
     border-style: solid;
     border-width: 3px;

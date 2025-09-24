@@ -25,18 +25,6 @@ const renderMinerals = async () => {
             mineralDescription.innerHTML = `<i>${mineral.description}</i><br></br>`
             bottomContainer.appendChild(mineralDescription)
 
-            const mineralSellPrice = document.createElement('p')
-            mineralSellPrice.innerHTML = `<strong>Sell Price</strong>: ${mineral.sellPrice}`
-            bottomContainer.appendChild(mineralSellPrice)
-
-            const mineralLocation = document.createElement('p')
-            mineralLocation.innerHTML = `<strong>Found in</strong>: ${mineral.location.join(', ')}`
-            bottomContainer.appendChild(mineralLocation)
-
-            const mineralUsedIn = document.createElement('p')
-            mineralUsedIn.innerHTML = `<strong>Used in</strong>: ${mineral.usedIn.join(', ')}`
-            bottomContainer.appendChild(mineralUsedIn)
-
             const link = document.createElement('a')
             link.textContent = 'Learn More'
             link.setAttribute('role', 'button')
@@ -56,4 +44,10 @@ const renderMinerals = async () => {
     }
 }
 
-renderMinerals()
+const requestedURL = window.location.href.split('/').pop()
+
+if (requestedURL) {
+    window.location.href='../404.html'
+} else {
+    renderMinerals()
+}
