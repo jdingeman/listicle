@@ -6,10 +6,10 @@ const renderMinerals = async () => {
 
     if (data) {
         data.map(mineral => {
-            const card = document.createElement('div')
+            const card = document.createElement('article')
             card.classList.add('card')
 
-            const topContainer = document.createElement('div')
+            const topContainer = document.createElement('header')
             topContainer.classList.add('top-container')
 
             const bottomContainer = document.createElement('div')
@@ -25,12 +25,14 @@ const renderMinerals = async () => {
             mineralDescription.innerHTML = `<i>${mineral.description}</i><br></br>`
             bottomContainer.appendChild(mineralDescription)
 
+            const footer = document.createElement('footer')
             const link = document.createElement('a')
             link.textContent = 'Learn More'
             link.setAttribute('role', 'button')
             link.href = `/minerals/${mineral.id}`
             link.classList.add('learn-more-btn')
-            bottomContainer.appendChild(link)
+            footer.appendChild(link)
+            bottomContainer.appendChild(footer)
 
             card.appendChild(topContainer)
             card.appendChild(bottomContainer)
