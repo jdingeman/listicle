@@ -1,28 +1,28 @@
-# WEB103 Project 1 - *Stardew Valley Minerals - Listicle*
+# WEB103 Project 1 - *Listicle Part 1*
 
-Submitted by: **Your name here**
+Submitted by: **Justin Dingeman**
 
-About this web app: **App description here**
+About this web app: **A simple listicle app that lists a few of the minerals found in Stardew Valley and their details.**
 
-Time spent: **X** hours
+Time spent: **6** hours
 
 ## Required Features
 
 The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
-- [ ] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [ ] **The web app displays a title**
-- [ ] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
-- [ ] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [ ] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
-  - [ ] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [ ] **The web app serves an appropriate 404 page when no matching route is defined**
-- [ ] **The web app is styled using Picocss**
+- [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
+- [x] **The web app displays a title**
+- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
+- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
+  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
+  - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
+- [x] **The web app serves an appropriate 404 page when no matching route is defined**
+- [x] **The web app is styled using Picocss**
 
 The following **optional** features are implemented:
 
-- [ ] The web app displays items in a unique format, such as cards rather than lists or animated list items
+- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
 
 The following **additional** features are implemented:
 
@@ -30,14 +30,12 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-**Note: please be sure to 
-
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='project-1_listicle.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  Add GIF tool here
+GIF created with LICECcap
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -45,11 +43,13 @@ GIF created with ...  Add GIF tool here
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+- I could not figure out how to properly route to the 404 page when looking at the '/minerals/:mineralid' endpoint. If I tried doing what was done in minerals.js to render the main page the same way into mineral.js to render specific mineral detail, anything that was not the '/' endpoint always led to the 404 page
+- I couldn't figure out how to add the catch-all route for non-existent endpoints to lead to the 404 page without the application crashing
+- I couldn't figure out how to route localhost:3001 to any specific mineral page. I was only able to display the entire list of minerals as a json instead of specific minerals specified by 'mineral/:mineralid'
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright 2025 Justin Dingeman
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
